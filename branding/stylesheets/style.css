@@ -1,0 +1,322 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* =================
+
+Copyright 2010 VAT Calculator
+
+Swatch Colours:
+#2B382A - Dark Green
+#567155 - Light Green
+#D5DBD4 - Background Green
+
+================= */ 
+
+
+/* Resets */
+
+* { 
+	margin:0;
+	padding:0;
+}
+
+img { 
+	border: none; 
+}
+
+
+/* Links and type */
+
+body {
+	background-image: url(../../images/head_bg.jpg);
+	background-repeat: repeat-x;
+	margin: 0px;
+	text-align: left;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	line-height: 1.5em;
+	color: #2B382A;
+}
+a:link, a:visited {
+	color: #2B382A;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+}
+
+h1.homepage {
+	height:32px;
+	background-repeat:no-repeat;
+	background-image: url(../../images/welcome.gif);
+	margin-bottom: 10px;
+}
+
+h1{
+	height:32px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 1.2em;
+	margin-bottom: .5em;
+}
+
+.intro {
+	font-size: 1.2em;
+	line-height: 1.6em;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+
+/* Structure */
+
+#wrapper {
+	margin: 0px auto;
+	padding: 0px;
+	border:0;
+	width: 960px;
+}
+
+#header {
+	margin: 0;
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 25px;
+	padding-right: 5px;
+}
+
+#nav {
+	margin: 0 0 20px 0;
+	font-size: 1.35em;
+	padding-left: 30px;
+	vertical-align: middle;
+	padding-top: 1px;
+}
+
+#nav a:link {
+	text-decoration: none;
+	color: #2B382A;
+	margin-top: 10px;
+}
+
+#page {
+	float: left;
+	width: 750px;
+	margin-right: 15px;
+}
+
+#break {
+	/*float: left;*/
+	width: 750px;
+	background-image: url(../../images/break_bg.gif);
+	background-repeat: repeat-x;
+}
+
+#sponsors {
+	float: left;
+	width: 190px;
+	height: 1% /* Holly hack for Peekaboo Bug */;
+	margin-right: 5px;
+	text-align: center;
+	background-color: #99CC99;
+}
+
+#break #content {
+	background-image: url(../../images/break_base.gif);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	padding: 10px 15px 17px 30px;
+}
+
+#break #content a:link, #break #content a:visited {
+	font-size: 1.5em;
+}
+
+#topbanner {
+	float: right;
+	width: 728px;
+}
+
+#footer {
+	clear: both;
+	margin: 20px 0px 20px 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999999;
+	font-size: 0.85em;
+	text-align: center;
+}
+
+#narrowcol {
+	float: right;
+	width: 215px;
+	padding-right: 30px;
+}
+
+#container2 {
+	margin-top: 13px;
+	padding-left: 30px;
+	width: 97%;
+	float: left;
+}
+
+#container2 a {
+	margin: 0 24px 0 0;
+}
+
+#container2 a.texter {
+	float:right;
+	text-align:center;
+	width:150px;
+	color:#ffffff;
+	background-color:#595959;
+	padding:5px;
+	font-weight:bold;
+	border: 2px solid #a2c301;
+}
+
+#container3 {
+	margin-top: 13px;
+	padding-left: 30px;
+}
+
+#container3 img {
+	padding-right: 20px;
+}
+
+
+/* Calculator */
+
+
+#calculator {
+	position: relative;
+	background-image: url(../../images/calcbg.jpg);
+	width: 208px;
+	padding-top: 10px;
+	padding-left: 10px;
+	display: block;
+}
+
+#calculator img {
+	margin-right: -4px;
+}
+
+#results {
+	background-image: url(../../images/resultsbg.jpg);
+	width: 208px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+
+#results p {
+	color: #000;
+	padding-left: 6px;
+	margin: 0;
+	padding-bottom: 0px;
+}
+
+#results span {
+	font-size: 0.7em;
+	color: #000;
+}
+
+#calcform {
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 1.2em;
+}
+
+#calculatorbase {
+	background-image: url(../../images/calcbase.jpg);
+	float: right;
+	width: 218px;
+	margin-left: 30px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 16px;
+}
+
+#startAgainDiv {
+	margin-top: 24px;
+	font-size: 11px;
+}
+
+#goorelated {
+	height: 15px;
+	width: 468px;
+	margin: 20px 0;
+	padding: 10px 0;
+	position: relative;
+
+}
+
+#goorelated ins[style] {
+	height: 15px !important;
+	position: absolute !important;
+	top: 5px !important;
+	left: 0 !important;
+}
+
+.textfield {
+	background-color: #F2FACF;
+	border-style: none;
+	font-size: 1.7em;
+	width: 170px;
+	margin: 3px 0 15px 10px;
+	height: 26px;
+	font-weight: bold;
+}
+
+.resultfield {
+	background-color: #F2FACF;
+	border-style: none;
+	font-size: 1.7em;
+	width: 170px;
+	margin: 6px 0 13px 10px;
+	height: 26px;
+	font-weight: bold;
+}
+
+.vatat {
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	font-size: 1em;
+	color: #000;
+	font-weight: bold;
+}
+
+.largeText {
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #000;
+}
+
+.smallText {
+	font-size: 0.6em;
+	color: #000;
+}
+
+#results a {
+	color: #FFF;
+	font-size: 0.8em;
+}
+
+#results a:hover {
+}
+
+#content p a.norm {
+	font-size:0.5em;
+}
+
+ul {
+	margin: 20px 20px 20px 35px;
+}
